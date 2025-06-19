@@ -38,4 +38,4 @@ This plugin is licensed under the GNU General Public License v3 or later. See [h
 
 ## Copyright
 
-2025 YOUR NAME <your@email.com>
+2025 Ali Sumitro <ali@teruselearning.co.uk>

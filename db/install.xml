@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<XMLDB PATH="local/soccer_team/db" VERSION="20240526" COMMENT="Database schema for soccer team management">
+  <TABLES>
+    <TABLE NAME="local_soccer_team" COMMENT="Soccer team assignments">
+      <FIELDS>
+        <FIELD NAME="id" TYPE="int" LENGTH="10" NOTNULL="true" SEQUENCE="true"/>
+        <FIELD NAME="courseid" TYPE="int" LENGTH="10" NOTNULL="true"/>
+        <FIELD NAME="userid" TYPE="int" LENGTH="10" NOTNULL="true"/>
+        <FIELD NAME="position" TYPE="char" LENGTH="20" NOTNULL="true"/>
+        <FIELD NAME="jerseynumber" TYPE="int" LENGTH="2" NOTNULL="true"/>
+      </FIELDS>
+      <KEYS>
+        <KEY NAME="primary" TYPE="primary" FIELDS="id"/>
+        <KEY NAME="courseuser" TYPE="unique" FIELDS="courseid, userid"/>
+      </KEYS>
+    </TABLE>
+  </TABLES>
+</XMLDB>
